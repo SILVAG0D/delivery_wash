@@ -1,4 +1,5 @@
 import 'package:delivery_wash/components/bottom_button.dart';
+import 'package:delivery_wash/sing_up_car/sign_car_screen.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -60,20 +61,20 @@ class _SignUpScreenState extends State<SignUpScreen> {
           ],
         ),
       ),
-    bottomNavigationBar: BottomAppBar(
-        elevation: 0,
-        child: Padding(
-          padding: EdgeInsets.symmetric(
-              vertical: size.height * 0.02, horizontal: size.width * 0.03),
-          child: BottomButton(
-            text: "Salvar",
-            press: () {
-              
-            }
-            //  },
-          ),
-        ),
-      ),
+
+    bottomNavigationBar:  Container(
+      margin: EdgeInsets.all(20),
+      child: ElevatedButton(
+      
+                onPressed: () {
+                   Navigator.push(context,MaterialPageRoute(builder: (context) => SignUpCarScreen()));
+                },
+                child: Text(
+                  'Cadastre-se',
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
+    )
     );
   }
 }

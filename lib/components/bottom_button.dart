@@ -15,7 +15,7 @@ class BottomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: getProportionateScreenHeight(70),
+      height: 70,
       child: TextButton(
         style: TextButton.styleFrom(
          
@@ -26,7 +26,7 @@ class BottomButton extends StatelessWidget {
         child: Text(
           text!,
           style: TextStyle(
-            fontSize: getProportionateScreenWidth(18),
+            fontSize: 18,
             color: Colors.white,
           ),
         ),
