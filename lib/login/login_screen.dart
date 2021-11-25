@@ -1,4 +1,5 @@
 import 'package:delivery_wash/components/default_button.dart';
+import 'package:delivery_wash/home/main_screen.dart';
 import 'package:delivery_wash/sign_up/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -70,7 +71,9 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(height: 70,),
 
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                 Navigator.push(context,MaterialPageRoute(builder: (context) => MainScreen()));
+              },
               child: Text(
                 'Login',
                 style: TextStyle(fontSize: 18),
