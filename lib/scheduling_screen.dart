@@ -1,3 +1,4 @@
+import 'package:delivery_wash/wash_plan/wash_plan_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 
@@ -55,6 +56,22 @@ class _SchedelingScreenState extends State<SchedelingScreen> {
           formatButtonShowsNext: true,
         ),
       ),
+      
+
+     bottomNavigationBar:  Container(
+       margin: EdgeInsets.all(20),
+       child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context,MaterialPageRoute(builder: (context) => WashPlanScreen()));
+                },
+                child: Text(
+                  'Ok',
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
+     ),
+
+      
     );
   }
 }
