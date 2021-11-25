@@ -1,4 +1,5 @@
 import 'package:delivery_wash/home/components/drawer_screen.dart';
+import 'package:delivery_wash/scheduling_screen.dart';
 import 'package:delivery_wash/washers/washers_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +27,9 @@ class _MainScreenState extends State<MainScreen> {
                     height: 100,
                     width: 150,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                         Navigator.push(context,MaterialPageRoute(builder: (context) => SchedelingScreen()));
+                      },
                       child: Text('Fazer agendamento'),
                     ),
                   ),
