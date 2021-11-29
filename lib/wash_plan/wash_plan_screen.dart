@@ -14,6 +14,16 @@ class _WashPlanScreenState extends State<WashPlanScreen> {
       appBar: AppBar(
         title: Text('Planos de lavagem')
       ),
+      body: Column(
+        children: [
+          Container(
+            height: 100,
+            width: 350,
+            color: Colors.red,
+
+          )
+        ],
+      ),
     );
   }
 }
